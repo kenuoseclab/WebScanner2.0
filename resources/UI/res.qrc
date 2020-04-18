@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="background">
+    <file>../images/background/webscan.jpg</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>../images/icon/checked.png</file>
+    <file>../images/icon/invs_check.png</file>
+    <file>../images/icon/add.png</file>
+    <file>../images/icon/get.png</file>
+    <file>../images/icon/devide.png</file>
+    <file>../images/icon/check.png</file>
+  </qresource>
+</RCC>

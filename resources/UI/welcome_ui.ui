@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane
+{
+	font: 18pt &quot;Trebuchet MS&quot;;
+	border-top: 1px solid white;
+	background-color: rgb(23, 23, 23);
+}
+QTabWidget::tab-bar
+{
+	subcontrol-position:center;
+	background-color: rgb(23, 23, 23);
+}
+ 
+QTabBar::tab
+ 
+{
+min-width:75px;
+min-height:35px;
+background-color: rgb(23, 23, 23);
+}
+ 
+QTabBar::tab:selected
+ 
+{
+color: rgb(255, 121, 0);
+background:transparent;
+	background-color: rgb(53, 54, 54);
+}
+ 
+QTabBar::tab:!selected
+{
+color: white;
+}
+
+QTabBar::tab:hover
+{
+color: rgb(255, 121, 0);
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab{
+	border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>主页面</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>60</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 48pt &quot;Helvetica Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>网  络  扫  描  器</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>院系: 信息工程系</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>专业: 计算机科学与技术</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>280</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>作 者: 陈 彦 志</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>320</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>学 号: 1651200111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>370</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>指 导 教 师: 姚 罡</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>450</y>
+        <width>421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 24pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>桂 林 电 子 科 技 大 学 信 息 科 技 学 院</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="selfIp_lab">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>10</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color: rgba(255, 255, 255,0.4);
+	font: 24pt &quot;.AppleSystemUIFont&quot;;
+}
+QLabel:hover{
+	color: rgba(255, 255, 255,0.6);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>572</x>
+        <y>10</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgba(255, 255, 255,0.4);
+	font: 15pt &quot;.AppleSystemUIFont&quot;;
+	background-color: rgba(255, 255, 255, 0);
+}
+QPushButton:hover{
+	color: rgba(255, 255, 255,0.6);
+}</string>
+      </property>
+      <property name="text">
+       <string>刷新</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_2{
+border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>主机探测</string>
+     </attribute>
+     <widget class="QLineEdit" name="hostAdd_lnEd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>411</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.2);
+color: rgb(255, 255, 255);
+border: 1px solid white;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>主机地址</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_HostScan_btn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>591</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgba(254, 162, 28, 0.6);
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}
+QPushButton:disabled{
+	background-color: rgb(159, 159, 159);
+}</string>
+      </property>
+      <property name="text">
+       <string>请输入正确格式的主机地址</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_HostScan_btn">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>60</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}</string>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>探测方法</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="hostScan_com">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>20</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>arp scan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>icmp scan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>syn_443 scan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ack_80 scan</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QTextBrowser" name="hostScan_textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>791</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser{
+	color: rgb(37, 238, 36);
+	font: 18pt &quot;Trebuchet MS&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_3{
+border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>端口探测</string>
+     </attribute>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>主机地址</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PortAdd_lnEd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>411</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.2);
+color: rgb(255, 255, 255);
+border: 1px solid white;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_PortScan_btn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>771</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgba(254, 162, 28, 0.6);
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}
+QPushButton:disabled{
+	background-color: rgb(159, 159, 159);
+}</string>
+      </property>
+      <property name="text">
+       <string>请输入正确格式的主机地址</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>开始端口</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>70</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>结束端口</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_PortScan_btn">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>60</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}</string>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>探测方法</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="PortScan_com">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>20</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>SYN 扫描</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FIN 扫描</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>NULL 扫描</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XMAS 扫描</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UDP 扫描</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="PortScan_startPort_lnEd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.2);
+color: rgb(255, 255, 255);
+border: 1px solid white;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PortScan_endPort_lnEd">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>70</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.2);
+color: rgb(255, 255, 255);
+border: 1px solid white;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="PortScan_textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>791</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser{
+	color: rgb(37, 238, 36);
+	font: 18pt &quot;Trebuchet MS&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_4{
+border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>服务识别</string>
+     </attribute>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>主机地址</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ServiceAdd_lnEd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.2);
+color: rgb(255, 255, 255);
+border: 1px solid white;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_ServiceScan_btn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>771</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgba(254, 162, 28, 0.6);
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}
+QPushButton:disabled{
+	background-color: rgb(159, 159, 159);
+}</string>
+      </property>
+      <property name="text">
+       <string>请输入正确格式的主机地址</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_ServiceScan_btn">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>20</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}</string>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="ServiceScan_textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>791</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser{
+	color: rgb(37, 238, 36);
+	font: 18pt &quot;Trebuchet MS&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_5{
+border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>操作系统探测</string>
+     </attribute>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>主机地址</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="OSAdd_lnEd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.2);
+color: rgb(255, 255, 255);
+border: 1px solid white;
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_OSscan_btn">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>20</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}</string>
+      </property>
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start_OSscan_btn">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>771</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgba(254, 162, 28, 0.6);
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}
+QPushButton:disabled{
+	background-color: rgb(159, 159, 159);
+}</string>
+      </property>
+      <property name="text">
+       <string>请输入正确格式的主机地址</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="OSscan_textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>791</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser{
+	font: 18pt &quot;Trebuchet MS&quot;;
+	color: rgb(37, 238, 36);
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Trebuchet MS'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Andale Mono';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_6{
+border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>FTP弱口令检测</string>
+     </attribute>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ip地址</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>10</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>密码</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ftp_ip_list">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>241</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{
+	color: rgb(37, 238, 36);
+	font: 18pt &quot;.AppleSystemUIFont&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragDrop</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ftp_userName_list">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>251</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{
+	color: rgb(37, 238, 36);
+	font: 18pt &quot;.AppleSystemUIFont&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DropOnly</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ftp_password_list">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>40</y>
+        <width>241</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{
+	color: rgb(37, 238, 36);
+	font: 18pt &quot;.AppleSystemUIFont&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DropOnly</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ftp_startScan_btn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>480</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgba(254, 162, 28, 0.6);
+	color: rgb(238, 243, 243);
+	font: 18pt &quot;Al Bayan&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(254, 162, 28, 0.7);
+}
+QPushButton:pressed{
+	background-color: rgba(254, 162, 28, 0.8);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>开始扫描</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>480</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;
+border:1px solid;
+background-color: rgba(255, 255, 255,0.2);</string>
+      </property>
+      <property name="text">
+       <string>正在检测的是:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ftp_curr_Ip_lab">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>480</y>
+        <width>501</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;
+border:1px solid;
+background-color: rgba(255, 255, 255,0.2);</string>
+      </property>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_getIp_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;获取ip&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/get.png);
+}
+
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_addIp_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;添加ip&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/add.png);
+}
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_addUser_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;添加用户名&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/add.png);
+}
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_addPass_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;添加用户名&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/add.png);
+}
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_delIp_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;删除ip&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+	border-image: url(:/icon/images/icon/devide.png);
+}
+QToolButton:hover{
+border:3px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_delUser_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;删除用户名&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/devide.png);
+}
+QToolButton:hover{
+border:3px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_delPass_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;删除用户名&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/devide.png);
+}
+QToolButton:hover{
+border:3px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_selAll_ip_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;全选&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/check.png);
+}
+
+QToolButton:checked{
+border-image: url(:/icon/images/icon/checked.png);
+}
+
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_invs_ip_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;反选&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/invs_check.png);
+}
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_selAll_username_btn">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;全选&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/check.png);
+}
+
+QToolButton:checked{
+border-image: url(:/icon/images/icon/checked.png);
+}
+
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_selAll_password_toolbtn">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;全选&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/check.png);
+}
+
+QToolButton:checked{
+border-image: url(:/icon/images/icon/checked.png);
+}
+
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_invs_username_btn">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;反选&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/invs_check.png);
+}
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="ftp_invs_pass_btn">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>10</y>
+        <width>26</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;反选&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+border-image: url(:/icon/images/icon/invs_check.png);
+}
+QToolButton:hover{
+border:1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="ftp_textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>380</y>
+        <width>791</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser{
+	color: rgb(37, 238, 36);
+font: 18pt &quot;Trebuchet MS&quot;;
+	background-color: rgba(166, 161, 142, 0.6);
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>350</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;Al Bayan&quot;;</string>
+      </property>
+      <property name="text">
+       <string>已爆破主机</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tab_7{
+border-image: url(:/background/images/background/webscan.jpg);
+}</string>
+     </property>
+     <attribute name="title">
+      <string>SQL注入检测</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>start_HostScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_HostScan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hostAdd_lnEd</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enable_startHostScan_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>356</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_HostScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clear_hostScan_TestBrowser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PortAdd_lnEd</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enable_startPortScan_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>424</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PortScan_startPort_lnEd</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enable_startPortScan_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>215</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PortScan_endPort_lnEd</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enable_startPortScan_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>431</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_PortScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_PortScan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_PortScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clear_PortScan_TestBrowser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>703</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>647</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_ServiceScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clear_ServiceScan_TestBrowser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>744</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_ServiceScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_ServiceScan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>427</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ServiceAdd_lnEd</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enable_startServiceScan_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_addIp_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>add_ftpIp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>refresh_ip()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>775</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_delIp_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>del_ftpIp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_addUser_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>add_ftpUserName()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>427</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_delUser_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>del_ftpUserName()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_addPass_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>add_ftpPassword()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>684</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>789</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_delPass_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>del_ftpPassword()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>711</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>729</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_getIp_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>get_ftpIp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>177</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_selAll_ip_toolbtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>selAll_ip()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_invs_ip_toolbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>invs_ip()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_selAll_username_btn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>selAll_username()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_invs_username_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>invs_username()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>536</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>538</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_selAll_password_toolbtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>selAll_password()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>756</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>728</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_invs_pass_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>invs_password()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>787</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>785</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ftp_startScan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_FtpScan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>775</x>
+     <y>588</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>799</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OSAdd_lnEd</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enable_startOSscan_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>637</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clear_OSscan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clear_OSscan_TestBrowser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>711</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>673</x>
+     <y>633</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_OSscan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_OSscan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>443</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>462</x>
+     <y>636</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clear_hostScan_TestBrowser()</slot>
+  <slot>enable_startHostScan_btn()</slot>
+  <slot>start_HostScan()</slot>
+  <slot>enable_startPortScan_btn()</slot>
+  <slot>start_PortScan()</slot>
+  <slot>clear_PortScan_TestBrowser()</slot>
+  <slot>clear_ServiceScan_TestBrowser()</slot>
+  <slot>start_ServiceScan()</slot>
+  <slot>enable_startServiceScan_btn()</slot>
+  <slot>on_ftpIpList_customContextMenuRequested(QPoint)</slot>
+  <slot>add_ftpIp()</slot>
+  <slot>refresh_ip()</slot>
+  <slot>del_ftpIp()</slot>
+  <slot>add_ftpUserName()</slot>
+  <slot>del_ftpUserName()</slot>
+  <slot>add_ftpPassword()</slot>
+  <slot>del_ftpPassword()</slot>
+  <slot>get_ftpIp()</slot>
+  <slot>selAll_ip()</slot>
+  <slot>invs_ip()</slot>
+  <slot>selAll_username()</slot>
+  <slot>invs_username()</slot>
+  <slot>selAll_password()</slot>
+  <slot>invs_password()</slot>
+  <slot>start_FtpScan()</slot>
+  <slot>ftp_display_done_host()</slot>
+  <slot>enable_startOSscan_btn()</slot>
+  <slot>clear_OSscan_TestBrowser()</slot>
+  <slot>start_OSscan()</slot>
+ </slots>
+</ui>
